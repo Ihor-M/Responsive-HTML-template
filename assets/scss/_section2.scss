@@ -1,0 +1,265 @@
+#section2 {
+  background: $serv-bg;
+  padding-left: 165px;
+  height: 760px;
+  position: relative;
+
+  .describe {
+    h1 {
+      margin-top: 248px;
+      font-size: $h1-font-size-md;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 85px;
+      padding-right: 30px;
+      font-size: $medium-size;
+    }
+  }
+
+  .row1, .row2 {
+    position: absolute;
+    transform: rotateZ(-45deg);
+    top: 300px;
+  }
+  .row1 {
+    right: 303px;
+  }
+  .row2 {
+    right: 60px;
+  }
+  .diamond {
+    display: inline-block;
+    width: 164px;
+    height: 164px;
+    background: white;
+    margin: 3px;
+    position: relative;
+    transition: background 200ms ease-in-out;
+
+    span {
+      transform: rotateZ(45deg);
+      display: inline-block;
+      position: absolute;
+    }
+    .service-logo {
+      top: 55px;
+      left: 80px;
+    }
+    .diamond-text {
+      top: 90px;
+      right: -20px;
+      width: 230px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: $small-size;
+      color: $serv-sqv-text;
+      font-weight: 600;
+      transition: color 200ms ease-in-out;
+    }
+
+    &:hover {
+      background: $serv-hover;
+
+      .diamond-text {
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1429px) {
+  #section2 {
+    padding-left: 195px;
+    height: 890px;
+
+    .describe {
+      h1 {
+        margin-top: 300px;
+        font-size: $h1-font-size-lg;
+      }
+    }
+    .row1, .row2 {
+      top: 360px;
+    }
+    .row1 {
+      right: 350px;
+    }
+    .row2 {
+      right: 66px;
+    }
+    .diamond {
+      width: 192px;
+      height: 192px;
+
+      .service-logo {
+        top: 70px;
+        left: 90px;
+      }
+      .diamond-text {
+        top: 105px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1240px) {
+  #section2 {
+    padding-left: 30px;
+
+    .describe {
+      h1 {
+        margin-top: 180px;
+      }
+    }
+    .row1, .row2 {
+      display: flex;
+      top: 220px;
+    }
+  }
+  div.row1 > div:nth-child(2),
+  div.row1 > div:nth-child(1) {
+    right: -173px;
+    top: 344px;
+  }
+}
+
+@media screen and (min-width: 754px) and (max-width: 991px) {
+  #section2 {
+    padding-left: 0;
+    text-align: center;
+    height: 1100px;
+
+    .row1 {
+      right: calc(50% - 140px);
+    }
+    .row2 {
+      right: calc(50% - 380px);
+    }
+    .row1, .row2 {
+      display: flex;
+      top: 660px;
+    }
+
+    .describe {
+      h1 {
+        margin-top: 180px;
+      }
+      p {
+        padding: 0 80px;
+      }
+    }
+  }
+  div.row1 > div:nth-child(1) {
+    bottom: 171px;
+    left: 170px;
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 753px) {
+  #section2 {
+    height: 1250px;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+
+    .describe {
+      float: none;
+      h1 {
+        font-size: 32px;
+        margin-top: 180px;
+      }
+      p {
+        text-align: justify;
+        padding: 0 30px;
+      }
+    }
+
+
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 753px) {
+  #section2 {
+    .row1, .row2 {
+      display: flex;
+      position: relative;
+      top: 250px;
+      transform-origin: center;
+      margin-left: calc(50% - 215px);
+    }
+    .row1 {
+      left: auto;
+      right: auto;
+    }
+    .row2 {
+      top: 304px;
+      right: auto;
+    }
+
+    .diamond {
+      width: 130px;
+      height: 130px;
+
+      span {
+        position: absolute;
+      }
+      .service-logo {
+        top: 35px;
+        left: auto;
+      }
+      .diamond-text {
+        width: 130px;
+        top: 70px;
+        right: 6px;
+        font-size: 10px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 399px) {
+  #section2 {
+    .row1, .row2 {
+      display: flex;
+      position: relative;
+      top: 250px;
+      transform-origin: center;
+      margin-left: calc(50% - 150px);
+    }
+    .row1 {
+      left: auto;
+      right: auto;
+    }
+    .row2 {
+      top: 289px;
+      right: auto;
+    }
+
+    .diamond {
+      width: 90px;
+      height: 90px;
+
+      span {
+        position: absolute;
+      }
+      .service-logo {
+        top: 13px;
+        left: 49px;
+
+        img {
+          width: 80%;
+        }
+      }
+      .diamond-text {
+        width: 88px;
+        top: 35px;
+        right: 5px;
+        font-size: 10px;
+      }
+    }
+  }
+}
